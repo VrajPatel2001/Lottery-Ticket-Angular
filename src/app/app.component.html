@@ -3,10 +3,7 @@
   <app-header></app-header>
  
 
-  <ul>
-
-
-
+  <ul class="main">
 
  <li>
 
@@ -74,19 +71,22 @@
       <li>
         <app-number-item [num]=20  [length]='length' (newItemEvent)="addItem($event)"></app-number-item>
       </li>
-
+  
     </ul>
 
-
+     
 
   </div> </li>
 
   <li>
 
-    <div class="numbers">
+    <div class="price">
       <h3>Price:</h3>
       <ul class="listing">
-
+        <app-price-button [num]=1  (newItemEvent)="addPrice($event)"></app-price-button>
+        <app-price-button [num]=5  (newItemEvent)="addPrice($event)"></app-price-button>
+        <app-price-button [num]=10  (newItemEvent)="addPrice($event)"></app-price-button>
+        <app-price-button [num]=20  (newItemEvent)="addPrice($event)"></app-price-button>
     </ul>
     </div>
 
@@ -96,7 +96,13 @@
 
 
   </ul>
+
+  <div class="price-list">
+    Numbers Selected:
 <ul>
-  <li *ngFor="let item of nums">Value: {{item}}</li>
+  <li *ngFor="let item of nums">Number: {{item}}</li>
 </ul>
+<h4>Price: {{price}}</h4>
+</div>
+
 </main>

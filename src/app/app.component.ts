@@ -13,6 +13,7 @@ export class AppComponent {
   find:boolean = false;
 
   length:number = this.nums.length;
+  
 
   addItem(newItem: number) {
   
@@ -28,6 +29,17 @@ export class AppComponent {
     {
     this.nums.push(newItem);
     }
-    
+
+   
   }
+
+  price:number=0;
+
+  addPrice(value:number)
+  {
+    this.price += value;
+  }
+
+
+  
 }
