@@ -1,0 +1,102 @@
+
+<main>
+  <app-header></app-header>
+ 
+
+  <ul>
+
+
+
+
+ <li>
+
+  <div class="numbers">
+    <h3>Numbers:</h3>
+    <ul class="listing">
+
+      <li>
+        <app-number-item [num]=1   [length]='length' (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=2  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=3  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=4  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=5  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=6 [length]='length'   (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=7  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=8 [length]='length'   (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=9  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=10  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=11  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=12  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=13  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=14  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=15  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=16  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=17  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=18  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=19  [length]='length'  (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+      <li>
+        <app-number-item [num]=20  [length]='length' (newItemEvent)="addItem($event)"></app-number-item>
+      </li>
+
+    </ul>
+
+
+
+  </div> </li>
+
+  <li>
+
+    <div class="numbers">
+      <h3>Price:</h3>
+      <ul class="listing">
+
+    </ul>
+    </div>
+
+  </li>
+
+
+
+
+  </ul>
+<ul>
+  <li *ngFor="let item of nums">Value: {{item}}</li>
+</ul>
+</main>
